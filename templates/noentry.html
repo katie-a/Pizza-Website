@@ -1,0 +1,24 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/noentry.css') }}">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>-->
+{% extends "base.html" %}
+<head>
+	<!--<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/noentry4.css') }}">-->
+	
+	<title>{% block title %}No Entry{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+    
+<div id="noenter">Mamma Mia! This page can't be accessed!</div>
+{% endblock %}
+</body>
